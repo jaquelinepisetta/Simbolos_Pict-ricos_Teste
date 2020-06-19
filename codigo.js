@@ -11,7 +11,7 @@ window.onload = function (){
     })
 	
 // para add o stilo do mapbox é necessário usar a o link CARTO
-	var Mapbox_tiles = L.tileLayer('https://api.mapbox.com/styles/v1/jaquelinepisetta/ck23a3lx90c9f1do4hxv6v8u5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiamFxdWVsaW5lcGlzZXR0YSIsImEiOiJjazFjZGRnNWkwN3I0M21wbXd3ZXoxbnRrIn0.TLwcegf2N8ELKz3G1MJSnw', {
+	var Mapbox_tiles = L.tileLayer('https://api.mapbox.com/styles/v1/jaquelinepisetta/ck9lwqhri0unp1iqffquwms0w/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiamFxdWVsaW5lcGlzZXR0YSIsImEiOiJjazFjZGRnNWkwN3I0M21wbXd3ZXoxbnRrIn0.TLwcegf2N8ELKz3G1MJSnw', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -33,6 +33,7 @@ window.onload = function (){
 	edit: {featureGroup: featureGroup}
     }).addTo(map);
 
+    
     map.on('draw:created', function(e) {
 
             // Each time a feaute is created, it's added to the over arching feature group
